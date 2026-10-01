@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Just For You 🩷</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>♡</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>♡</span>
+        <span>✦</span>
+    </div>
+
+
+    <!-- Videos Page -->
+    <main class="video-page">
+
+        <p class="small-title">
+            A LITTLE SOMETHING FOR YOU
+        </p>
+
+        <h1 class="video-heading">
+            Just <span>Watch...</span> 🩷
+        </h1>
+
+        <p class="video-intro">
+            No skipping. 👀
+            <br>
+            I know you're going to try. 😂
+        </p>
+
+
+        <!-- VIDEO 1 -->
+        <section class="video-card">
+
+            <div class="video-number">
+                01
+            </div>
+
+            <h2>
+                First One 🩷
+            </h2>
+
+            <div class="video-box">
+                <video controls playsinline>
+                    <source src="videos/video1.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+            </div>
+
+            <p class="video-caption">
+                Okay... this one is just for you. 🩷
+            </p>
+
+            <p class="video-subcaption">
+                Don't smile too much.
+                I might get shy. 😂
+            </p>
+
+            <button onclick="showVideo2()">
+                Next Video → 🩷
+            </button>
+
+        </section>
+
+
+        <!-- VIDEO 2 -->
+        <section class="video-card hidden" id="video2">
+
+            <div class="video-number">
+                02
+            </div>
+
+            <h2>
+                Still Watching? 👀
+            </h2>
+
+            <div class="video-box">
+                <video controls playsinline>
+                    <source src="videos/video2.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+            </div>
+
+            <p class="video-caption">
+                Hmm... looks like you really like me. 😂🩷
+            </p>
+
+            <p class="video-subcaption">
+                Okay okay... I have one more for you.
+            </p>
+
+            <button onclick="showVideo3()">
+                One More → 🩷
+            </button>
+
+        </section>
+
+
+        <!-- VIDEO 3 -->
+        <section class="video-card hidden" id="video3">
+
+            <div class="video-number">
+                03
+            </div>
+
+            <h2>
+                Okay... Last One 🤭
+            </h2>
+
+            <div class="video-box">
+                <video controls playsinline>
+                    <source src="videos/video3.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+            </div>
+
+            <p class="video-caption">
+                And this time I'm actually telling the truth. 😂🩷
+            </p>
+
+            <p class="video-subcaption">
+                But wait...
+                there's still one last thing. 👀
+            </p>
+
+            <button onclick="window.location.href='final.html'">
+                Final Surprise → 🩷
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        function showVideo2() {
+
+            document.getElementById("video2").classList.remove("hidden");
+
+            document.getElementById("video2").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+        function showVideo3() {
+
+            document.getElementById("video3").classList.remove("hidden");
+
+            document.getElementById("video3").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
